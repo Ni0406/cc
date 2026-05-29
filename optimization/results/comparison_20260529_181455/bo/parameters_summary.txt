@@ -1,0 +1,48 @@
+============================================================
+OPTIMIZATION PARAMETERS SUMMARY
+============================================================
+
+BEFORE (Default Parameters):
+----------------------------------------
+  exc_weight_mean: 0.001
+  exc_weight_std: 0.0009
+  exc_tau: 2.0
+  exc_delay_mean: 3.0
+  exc_delay_std: 2.0
+  inh_weight: 0.001
+  inh_tau: 3.0
+  inh_delay: 2.0
+  inh_e: -75.0
+  stim_weight: 0.01
+  stim_interval: 15.0
+  stim_noise: 1.0
+
+AFTER (Optimized Parameters):
+----------------------------------------
+  exc_weight_mean: 0.009862
+  exc_weight_std: 0.000105
+  exc_tau: 7.707497
+  exc_delay_mean: 7.316369
+  exc_delay_std: 3.615491
+  inh_weight: 0.000124
+  inh_tau: 6.316810
+  inh_delay: 3.795955
+  inh_e: -67.171271
+  stim_weight: 0.004613
+  stim_interval: 25.801950
+  stim_noise: 0.820907
+
+CHANGES:
+----------------------------------------
+  exc_weight_mean: 0.001 → 0.009862 (+886.2%)
+  exc_weight_std: 0.0009 → 0.000105 (-88.3%)
+  exc_tau: 2.0 → 7.707497 (+285.4%)
+  exc_delay_mean: 3.0 → 7.316369 (+143.9%)
+  exc_delay_std: 2.0 → 3.615491 (+80.8%)
+  inh_weight: 0.001 → 0.000124 (-87.6%)
+  inh_tau: 3.0 → 6.316810 (+110.6%)
+  inh_delay: 2.0 → 3.795955 (+89.8%)
+  inh_e: -75.0 → -67.171271 (+10.4%)
+  stim_weight: 0.01 → 0.004613 (-53.9%)
+  stim_interval: 15.0 → 25.801950 (+72.0%)
+  stim_noise: 1.0 → 0.820907 (-17.9%)

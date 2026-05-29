@@ -1,0 +1,36 @@
+{
+  "baseline_fitness": 56564.74028619925,
+  "ga_fitness": 56562.5625,
+  "ga_improvement": 0.003850077253485835,
+  "ga_params": {
+    "exc_weight_mean": 0.00040665633135147916,
+    "exc_weight_std": 7.83996695836151e-05,
+    "exc_tau": 5.631747698841177,
+    "exc_delay_mean": 3.8011437030470097,
+    "exc_delay_std": 0.5759491158946374,
+    "inh_weight": 0.0009780337016659405,
+    "inh_tau": 1.3094966900369656,
+    "inh_delay": 4.59194180935452,
+    "inh_e": -77.23660055199949,
+    "stim_weight": 0.013353819088790582,
+    "stim_interval": 12.792776902235275,
+    "stim_noise": 0.5200680211778108
+  },
+  "bo_fitness": 55585.60025624466,
+  "bo_improvement": 1.7310077355618747,
+  "bo_params": {
+    "exc_weight_mean": 0.009862385414693673,
+    "exc_weight_std": 0.00010535307259209923,
+    "exc_tau": 7.707497493336965,
+    "exc_delay_mean": 7.3163693765389395,
+    "exc_delay_std": 3.615491130858883,
+    "inh_weight": 0.0001242919452412362,
+    "inh_tau": 6.316809826533484,
+    "inh_delay": 3.7959552594523736,
+    "inh_e": -67.17127088826244,
+    "stim_weight": 0.004613203904399666,
+    "stim_interval": 25.80195016242934,
+    "stim_noise": 0.8209071620737713
+  },
+  "winner": "Bayesian Optimization"
+}

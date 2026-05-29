@@ -1,0 +1,17 @@
+# 10K НЕЙРОНОВ 
+N_thalamus_E = 480
+N_thalamus_I = 120
+N_L4_E = 1440
+N_L4_I = 360
+N_L23_E = 700
+N_L23_I = 175
+N_L5_E = 600
+N_L5_I = 150
+N_L6_E = 960
+N_L6_I = 240
+
+
+simulation:
+  tstop: 100.0   
+  dt: 0.1        
+  v_init: -65

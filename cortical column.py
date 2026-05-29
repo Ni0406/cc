@@ -7,9 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1WUYteoTupSmbrXQR10STcRG3TGqbgXCf
 """
 
-!pip install neuron
 
-from neuron import h, gui
+
+from neuron import h
 import random
 
 h.load_file('stdrun.hoc')
@@ -318,7 +318,6 @@ synapses_Bask56_to_Bask56, netcons_Bask56_to_Bask56 = connect_inh(L56_I_Bask56, 
 synapses_Bask56_to_L5_TuftRS, netcons_Bask56_to_L5_TuftRS = connect_inh(L56_I_Bask56, L5_E_TuftRS5)
 synapses_Bask56_to_L5_TuftIB, netcons_Bask56_to_L5_TuftIB = connect_inh(L56_I_Bask56, L5_E_TuftIB5)
 synapses_Bask56_to_L6, netcons_Bask56_to_L6 = connect_inh(L56_I_Bask56, L6_E_NontuftRS6)
-
 synapses_Axax56_to_TuftRS5, netcons_Axax56_to_TuftRS5 = connect_inh(L56_I_Axax56, L5_E_TuftRS5)
 
 # Таламус: ингибиторы
@@ -326,10 +325,16 @@ synapses_nRT_to_nRT, netcons_nRT_to_nRT = connect_inh(thalamus_I_nRT, thalamus_I
 # synapses_nRT_to_TCR, netcons_nRT_to_TCR = connect_inh(thalamus_I_nRT, thalamus_E_TCR)  # закомментировано
 
 h.tstop = 200
+# Ускорение
+h.nthread(8)        # используй все ядра CPU (поставь своё кол-во)
+h.tstop = 100       # сократи до 100 мс вместо 200 — для демо хватит
+h.dt = 0.1          # шаг интегрирования (было 0.025 — в 4х быстрее)
+
 h.finitialize(-65)
 h.continuerun(h.tstop)
 
 import matplotlib.pyplot as plt
+matplotlib.use('MacOSX')  
 
 # Только возбуждающие группы
 '''
